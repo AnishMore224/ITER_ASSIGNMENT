@@ -18,19 +18,28 @@ public class Q7
 			arr[i]=sc.nextInt();
 		}
 		int min=arr[0],max=arr[0],maxindex=0,minindex=0;
-		int mincount=1;
-		int maxcount=1;
-		for(int i=1;i<n;i++)
+		int mincount=0;
+		int maxcount=0;
+		for(int i=0;i<n;i++)
 		{
 			if(arr[i]>max)
 			{
 				max=arr[i];
-				maxcount++;
+				maxcount=0;
 				maxindex=i;
 			}
-			if(arr[i]<=min)
+			if(max==arr[i])
+			{
+				maxcount++;
+			}
+			if(arr[i]<min)
 			{
 				min=arr[i];
+				mincount=0;
+				minindex=i;
+			}
+			if(min==arr[i])
+			{
 				mincount++;
 				minindex=i;
 			}
@@ -39,7 +48,7 @@ public class Q7
 		System.out.println("Maximum element of Array is "+max+" and occurs "+maxcount+" times.");
 		System.out.println("Minimum element of Array is "+min+" and occurs "+mincount+" times.");
 		System.out.println("First occurrence of maximum element is at position: "+(1+maxindex));
-		System.out.println("First occurrence of minimum element is at position: "+(1+minindex));
+		System.out.println("Last occurrence of minimum element is at position: "+(1+minindex));
 		
 	}
 }
@@ -49,5 +58,6 @@ Enter elements of the array: 12 14 12 14 13
 Maximum element of Array is 14 and occurs 2 times.
 Minimum element of Array is 12 and occurs 2 times.
 First occurrence of maximum element is at position: 2
-First occurrence of minimum element is at position: 3
+Last occurrence of minimum element is at position: 3
+
 */
