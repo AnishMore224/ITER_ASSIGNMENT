@@ -9,7 +9,7 @@ class Student
 {
 	int Roll;
 	String Name;
-	Double DSA_Mark;
+	double DSA_Mark;
 	
 	void getdata()
 	{
