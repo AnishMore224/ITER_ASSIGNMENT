@@ -61,7 +61,7 @@ Roll:1	Name:anish	DSA mark:95.0
 Enter Student 2 data
 Enter Roll:2
 Enter Name:himanshu
-Enter DSA marks:90Student with maximum DSA mark--
+Enter DSA marks:90
 Roll:2	Name:himanshu	DSA mark:90.0
 Enter Student 3 data
 Enter Roll:3
