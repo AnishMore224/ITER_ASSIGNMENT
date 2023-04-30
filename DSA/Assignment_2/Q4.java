@@ -20,7 +20,7 @@ class product
 	}
 	void display()
 	{
-		System.out.println("Product-id:"+pid+"\tproduct price:"+price);
+		System.out.println(pid+"\t\t"+price);
 	}
 }
 public class Q4
@@ -37,10 +37,11 @@ public class Q4
 			System.out.print("Enter Price:");
 			double p=sc.nextDouble();
 			P[i]=new product(pd,p);
-			P[i].display();
 		}
+		System.out.println("Product-id\tproduct price");
 		for(int i=0;i<5;i++)
 		{
+			P[i].display();
 			product.tot_price+=P[i].price;
 		}
 		System.out.println("Total amount:"+product.tot_price);
@@ -50,22 +51,23 @@ public class Q4
 Enter Product 1 data
 Enter product id:1
 Enter Price:100
-Product-id:1	product price:100.0
 Enter Product 2 data
 Enter product id:2
 Enter Price:200
-Product-id:2	product price:200.0
 Enter Product 3 data
 Enter product id:3
 Enter Price:300
-Product-id:3	product price:300.0
 Enter Product 4 data
 Enter product id:4
 Enter Price:400
-Product-id:4	product price:400.0
 Enter Product 5 data
 Enter product id:5
 Enter Price:500
-Product-id:5	product price:500.0
+Product-id	product price
+1			100.0
+2			200.0
+3			300.0
+4			400.0
+5			500.0
 Total amount:1500.0
 */
