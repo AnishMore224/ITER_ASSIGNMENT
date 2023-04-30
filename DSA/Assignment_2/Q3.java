@@ -9,7 +9,7 @@ class Student
 {
 	int Roll;
 	String Name;
-	double DSA_Mark;
+	Double DSA_Mark;
 	
 	void getdata()
 	{
@@ -23,7 +23,7 @@ class Student
 	}
 	void showdata()
 	{
-		System.out.println("Roll:"+Roll+"\tName:"+Name+"\tDSA mark:"+DSA_Mark);
+		System.out.println(Roll+"\t"+Name+"\t\t"+DSA_Mark);
 	}
 }
 public class Q3
@@ -36,8 +36,13 @@ public class Q3
 			System.out.println("Enter Student "+(i+1)+" data");
 			S[i]=new Student();
 			S[i].getdata();
+		}
+		System.out.println("Roll\tName\t\tDSA mark");
+		for(int i=0;i<5;i++)
+		{
 			S[i].showdata();
 		}
+
 		double maxmark=S[0].DSA_Mark;
 		int index=0;
 		for(int i=1;i<5;i++)
@@ -57,27 +62,28 @@ Enter Student 1 data
 Enter Roll:1
 Enter Name:anish
 Enter DSA marks:95
-Roll:1	Name:anish	DSA mark:95.0
 Enter Student 2 data
 Enter Roll:2
 Enter Name:himanshu
 Enter DSA marks:90
-Roll:2	Name:himanshu	DSA mark:90.0
 Enter Student 3 data
 Enter Roll:3
 Enter Name:shayan
 Enter DSA marks:88
-Roll:3	Name:shayan	DSA mark:88.0
 Enter Student 4 data
 Enter Roll:4
 Enter Name:aditya
 Enter DSA marks:90
-Roll:4	Name:aditya	DSA mark:90.0
 Enter Student 5 data
 Enter Roll:5
 Enter Name:ved
 Enter DSA marks:85
-Roll:5	Name:ved	DSA mark:85.0
+Roll	Name		DSA mark
+1	anish		95.0
+2	himanshu	90.0
+3	shayan		88.0
+4	aditya		90.0
+5	ved		85.0
 Student with maximum DSA mark--
-Roll:1	Name:anish	DSA mark:95.0
+1	anish	95.0
 */
