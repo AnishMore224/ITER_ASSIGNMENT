@@ -41,12 +41,12 @@ class Deposit
 	}
 	void display()
 	{
-		System.out.println("Principal:"+Principal+"\tTime :"+Time+"\tRate :"+Rate);
+		System.out.print(Principal+"\t\t"+Time+"\t"+Rate+"\t");
 	}
 	void calc_amt( )
 	{
 		Total_amt = Principal + (Principal*Rate*Time/100);
-		System.out.println("Total Amount :"+Total_amt);
+		System.out.println(Total_amt);
 	}
 }
 public class Q5
@@ -60,24 +60,28 @@ public class Q5
 		int t=sc.nextInt();
 		System.out.print("Enter Rate:");
 		double r=sc.nextDouble();
+		System.out.println("Principal\tTime\tRate\tTotal Amount");
 		Deposit obj1=new Deposit();
 		obj1.display();
+		obj1.calc_amt();
 		Deposit obj2=new Deposit(p,t,r);
 		obj2.display();
+		obj2.calc_amt();
 		Deposit obj3=new Deposit(p,t);
 		obj3.display();
+		obj3.calc_amt();
 		Deposit obj4=new Deposit(p,r);
 		obj4.display();
-		obj2.calc_amt();
+		obj4.calc_amt();
 	}
 }
 /*Output---
 Enter Principal:100
 Enter Time:2
 Enter Rate:10
-Principal:0	Time :0	Rate :0.0
-Principal:100	Time :2	Rate :10.0
-Principal:100	Time :2	Rate :0.0
-Principal:100	Time :0	Rate :10.0
-Total Amount :120.0
+Principal	Time	Rate	Total Amount
+0		0	0.0	0.0
+100		2	10.0	120.0
+100		2	0.0	100.0
+100		0	10.0	100.0
 */
