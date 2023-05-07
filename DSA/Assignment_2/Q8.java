@@ -13,7 +13,7 @@ interface DetailInfo{
 
 class person implements DetailInfo
 {
-	int maxcount=0;
+	static int maxcount=0;
 	String name;
 	
 	person(String name){
