@@ -183,7 +183,6 @@ public class Q1
 	{
 		if(start==null||start.next==null)
 		{
-			System.out.println("Underflow");
 			return null;
 		}
 		
