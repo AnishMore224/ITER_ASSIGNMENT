@@ -15,19 +15,15 @@ public class Q6 {
       System.out.print("Enter a number: ");
       arr[i] = sc.nextInt();
     }
-    int index=0;
-    for(int i=n-1;i>=n/2;i--)
+    int i=0,j=n-1;
+    for(int index=0;index<n;index++)
     {
-        arr1[index]=arr[i];
-        index+=2;
+      if(index%2==0)
+        arr1[index]=arr[j--];
+      else
+        arr1[index]=arr[i++];
     }
-    index=1;
-    for(int i=0;i<n/2;i++)
-    {
-        arr1[index]=arr[i];
-        index+=2;
-    }
-    for(int i=0;i<n;i++)
+    for(i=0;i<n;i++)
     System.out.print(arr1[i]+" ");
   }
 }
