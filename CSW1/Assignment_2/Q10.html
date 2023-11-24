@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        width: 400px;
+        border-radius: 20px;
+        padding: 20px 10px;
+      }
+      div {
+        width: 75%;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+      input {
+        margin: 10px 0 5px 0px;
+        outline: none;
+        padding: 6px;
+        border: 2px solid;
+        border-radius: 5px;
+      }
+      #btn {
+        width: 75%;
+        background-color: #f5a472;
+        color: #873600;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <img src="assests/SOA1.png" alt="soalogo" width="100px" height="100px" />
+      <h2>Registration</h2>
+
+      <div>
+        <label for="name">UserName</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter UserName.."
+          autofocus
+        /><br />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter Email.." /><br />
+      </div>
+
+      <div>
+        <label for="mobile">Mobile</label>
+        <input
+          type="mobile"
+          name="mobile"
+          placeholder="Enter Mobile Number.."
+        /><br />
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male" style="width: 40px">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+      </div>
+      <div>
+        <label for="City">City</label>
+        <select
+          name="City"
+          style="margin: 10px 0 5px 0; width: 60%; padding: 6px"
+        >
+          <option value="sc" disabled selected>Select City</option>
+          <option value="bbs">Bhubaneswar</option>
+          <option value="puri">Puri</option>
+          <option value="jsg">Jharsuguda</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="pwd">Password</label>
+        <input
+          type="password"
+          name="pwd"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"
+          title="Passwords must contain atleast 1 uppercase character, 1 lowercase character, and 1 number"
+          placeholder="Enter Password.."
+        />
+      </div>
+
+      <input type="submit" value="Sign Up" id="btn" />
+    </form>
+  </body>
+</html>

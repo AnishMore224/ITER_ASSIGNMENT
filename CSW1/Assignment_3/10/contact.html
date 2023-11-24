@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="../jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){	
+				$("#submit").click(function(){
+					if($("#name").val()==="")
+						alert("Name field is empty");
+					else if($("#email").val()==="")
+						alert("Email field is empty");
+					else if($("#msg").val()==="")
+						alert("Message field is empty");
+					
+				});
+			});
+		</script>
+		<style>
+			*{
+				margin:5px;
+				outline:none;
+				color:white;
+				letter-spacing:1px;
+				
+			}
+			form{
+				display:flex;
+				flex-direction:column;	
+				background:linear-gradient(to bottom right, rgba(0, 0, 204,0.7) 0%, rgba(0, 255, 255,0.7) 100%);
+				padding:5%;
+				border-radius:20px;
+			}
+			#main{
+				display:flex;
+				flex-direction:column;	
+				align-items:center;
+				justify-content:center;
+				width:100%;
+				height:700px;
+			}
+			input{
+				color: black;
+				border-radius:5px;	
+			}
+			#submit{
+				background-color:#0066cc;
+				padding:3px;
+				color:white;
+			}
+			#submit:hover{
+				background-color:#00ffff;
+				color:black;
+			}
+			#msg{
+				color: black;
+				height:50px;
+				border-radius:10px;
+			}
+		</style>
+	<link rel="stylesheet" href="style.css" />
+	</head>
+	<body> 
+		<nav>
+      <div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+		<div id="main">
+			
+			<form>
+				<h2 style="text-align:center">Contact Us</h2>
+				Name:<input type="text" id="name" placeholder="Enter your name" >
+				
+				Email:<input type="email" placeholder="Enter your email" id="email">
+				
+				Message:<textarea placeholder="Enter Message" id="msg"></textarea>
+				<input type="submit" value="Submit" id="submit">
+			</form>
+		</div>
+	</body>
+</html>

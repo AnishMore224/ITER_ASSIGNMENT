@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#field1").focus(function(){
+					$(this).val("Enter your Name");
+					});
+				$("#field1").blur(function(){
+					$(this).css({"border":"2px solid red"});
+				});
+			});
+		</script>
+	</head>
+	<body> 
+		<form> 
+			<input id="field1" type="text" value="Field 1">
+			<input id="field2" type="text" value="Field 2">
+		</form>
+	</body>
+</html>

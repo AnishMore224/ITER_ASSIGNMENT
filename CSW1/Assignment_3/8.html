@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+      body {
+        background-color: rgb(163, 210, 231);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        height: 300px;
+      }
+      td {
+        border: 2px solid rgb(6, 6, 117);
+        text-align: center;
+        font-size: 25px;
+        background-color: rgb(117, 179, 249);
+      }
+      td:hover {
+        color: purple;
+      }
+      td:visited {
+        color: yellow;
+      }
+      ol {
+        border: 1px solid purple;
+        font-size: 15px;
+        display: none;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("h1").show();
+        });
+        $("#b1").click(function () {
+            $("ol").not(0).hide();
+          $("ol").eq(0).toggle();
+          
+        });
+        $("#b2").click(function () {
+            $("ol").not(1).hide();
+          $("ol").eq(1).toggle();
+        });
+        $("#b3").click(function () {
+            $("ol").not(2).hide();
+          $("ol").eq(2).toggle();
+        });
+        $("#b4").click(function () {
+            $("ol").not(3).hide();
+          $("ol").eq(3).toggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align: center">Job details:</h1>
+    <table>
+      <tr id="r1">
+        <td>1.Journalist</td>
+        <td><button id="b1">Show Details</button></td>
+      </tr>
+      <tr id="r2">
+        <td>2.doctor</td>
+        <td><button id="b2">Show Details</button></td>
+      </tr>
+      <tr id="r3">
+        <td>3.translator</td>
+        <td><button id="b3">Show Details</button></td>
+      </tr>
+      <tr id="r4">
+        <td>4.teacher</td>
+        <td><button id="b4">Show Details</button></td>
+      </tr>
+    </table>
+    <h1 style="display: none">The Job Offers Are:</h1>
+    <ol>
+      <li>Mobile NEWS 24x7 ,Satyanager,Bhuwaneshwar</li>
+      <li>Sambhav Tv,Jagmara,Bhuwaneshwar</li>
+      <li>Content Makers Tv,Jagmara,Bhuwaneshwar</li>
+      <li>Quint,Satyanager,Bhuwaneshwar</li>
+    </ol>
+
+    <ol>
+      <li>Cognia TECH LLP,Satyanager,Bhuwaneshwar,odisha</li>
+      <li>Raj Kumari Foundation,Jagmara,Bhuwaneshwar,odisha</li>
+      <li>MoExperts,Jagmara,Bhuwaneshwar,odisha</li>
+      <li>TMH hospital,jamshedpur,jharkahnd</li>
+    </ol>
+    <ol>
+      <li>Translators and proofreaders reqired at Planature,khordha,odisha</li>
+      <li>japanese translator required at Asmacs group Bhuwaneshwar,odisha</li>
+      <li>Varahe Analytics private limited a,Bhuwaneshwar,odisha</li>
+      <li>deloit,jamshedpur,jharkahnd</li>
+    </ol>
+    <ol>
+      <li>ITER,jagmara,odisha</li>
+      <li>KIIT ,Patia,odisha</li>
+      <li>GIIT,Bhuwaneshwar,odisha</li>
+      <li>XLRI,jamshedpur,jharkahnd</li>
+    </ol>
+  </body>
+</html>

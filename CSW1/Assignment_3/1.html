@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				var len=$("#selected").children().length;
+				$("#display").text("Number of \"p\" elements are: "+len);
+				});
+		</script>
+		
+		<style>
+			#display{
+				width:50%;
+				border:2px solid;
+				padding:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="selected"> 
+			<p>Red</p>
+			<p>White</p>
+			<p>Green</p>
+			<p>Black</p>
+			<p>Blue</p>
+			<p>Orange</p>
+		</div>
+		<hr>
+		<p id="display"></p>
+	</body>
+</html>

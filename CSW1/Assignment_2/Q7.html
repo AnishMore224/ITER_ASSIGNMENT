@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 200px;
+        margin-bottom: 0;
+      }
+      button {
+        width: 300px;
+        height: 30px;
+        background-color: lightblue;
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+        
+      }
+      ul {
+        display: none;
+        list-style-type: none;
+        box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.9);
+        width: 300px;
+        margin-top: 3px;
+        padding: 0;
+        
+      }
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        color: white;
+        
+      }
+
+      #li1{
+        font-family: "Garamond";
+        background-color: #3F9EDB;
+
+      }
+      #li2{
+        font-family: 'Courier New';
+        background-color: #327FB1;
+      }
+      #li3{
+        font-family: 'Papyrus';
+        background-color: #276287;
+      }
+      #li4{
+        font-family: 'Lucida Handwriting';
+        background-color: #1c4c6a;
+      }
+      #li5{
+        font-family: 'Lucida Console';
+        background-color: #0e2534;
+      }
+      
+      div:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>There is the drop down button here</p>
+    <div>
+      <button>Hover Over Here</button>
+      <ul>
+        <li id="li1">Computer Science Workshop</li>
+        <li id="li2">Probability and Statistics</li>
+        <li id="li3">Digital Logic Design</li>
+        <li id="li4">Principle of Macroeconomics</li>
+        <li id="li5">Algorithm Design</li>
+      </ul>
+    </div>
+  </body>
+</html>

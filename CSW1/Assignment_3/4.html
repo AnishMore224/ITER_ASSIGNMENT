@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#click").click(function(){
+					$("p").fadeIn("fast");
+				});
+				$("#close").click(function(){
+					$("p").fadeOut();
+				});
+			});
+		</script>
+		<style>
+			p{
+				padding:20px 50px;
+				width:300px;
+				margin:auto;
+				position:relative;
+				height:100px;
+				display:none;
+				top:-30px;
+				background-color: black;
+				color: white;
+				border-radius: 10px;
+			}
+			#close{
+				background-color:#6BB5F2;
+				position:absolute;
+				right:10px;
+				bottom:10px;
+				padding: 10px;
+			}
+		</style>
+
+	</head>
+	<body> 
+		<button id="click">Click to show alert</button>
+		<p>Alert box<button id="close">Close</button></p>
+	</body>
+</html>

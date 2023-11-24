@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#click").dblclick(function(){
+					$(this).css({"background-color":"lightblue"});
+				});
+				$("#click").click(function(){
+					$(this).css({"font-size":"30px"});
+				});
+			
+			});
+		</script>
+	</head>
+	<body>
+		<p id="click">Click me!</p>
+		<p>On single click the font size will increase</p>
+		<p>On double click the background-color will become light blue</p>
+	</body>
+</html>

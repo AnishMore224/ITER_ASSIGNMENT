@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("tbody").append(
+            "<tr><td>Data 1</td><td>Data 2</td></tr>"
+          );
+        });
+        $("#b2").click(function () {
+          $("#pcolor").css("color", "red");
+        });
+        $("#b3").click(function () {
+          $("#p1").remove();
+        });
+      });
+    </script>
+    <style>
+      th,
+      td {
+        border: 1px solid blue;
+        height: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="border: 2px dotted purple; width: 80%">
+      <thead>
+        <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+          </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="b1">click to add rows</button>
+    <p id="pcolor">the text will change its color</p>
+    <button id="b2">click this button to change text</button>
+    <br />
+    <p id="p1">This text will be removed</p>
+    <button id="delete">Click to delete</button>
+	<input type="text" id="del" placeholder="Enter id"><br>
+  </body>
+</html>

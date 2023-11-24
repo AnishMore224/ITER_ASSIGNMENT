@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				$("#submit").click(function(){
+					var name=$("#name").val();
+					var email=$("#email").val();
+					if(name==="")
+						alert("Name field is empty");
+					else if($("#password").val()==="")
+						alert("Password field is empty");
+					else if(email==="")
+						alert("Email field is empty");
+					
+				});
+			});
+		</script>
+		<style>
+			*{
+				margin:5px;
+			}
+			form{
+				display:flex;
+				flex-direction:column;	
+				background:linear-gradient(to bottom right, #0066cc 0%, #00ffff 100%);
+				padding:5%;
+				border-radius:20px;
+			}
+			div{
+				display:flex;
+				flex-direction:column;	
+				align-items:center;
+				justify-content:center;
+				width:100%;
+				height:700px;
+			}
+			input{
+				outline:none;	
+				border-radius:5px;	
+			}
+			#submit{
+				background-color:#0066cc;
+				padding:3px;
+				color:white;
+			}
+			#submit:hover{
+				background-color:#00ffff;
+				color:black;
+			}
+		</style>
+
+	</head>
+	<body> 
+		<div>
+			
+			<form>
+				<h2 style="text-align:center">Sign Up</h2>
+				Name:<input type="text" id="name" placeholder="Enter your name" >
+				Password:<input type="password" placeholder="Enter Password" id="password">
+				Email:<input type="email" placeholder="Enter your email" id="email"><br>
+			
+				<input type="submit" value="Submit" id="submit">
+			</form>
+		</div>
+	</body>
+</html>

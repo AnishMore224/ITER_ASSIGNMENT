@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    *{
+        border-radius: 10px;
+    }
+      form{
+        border: 4px solid #102939;
+        padding: 20px;
+        width: 350px;
+      }
+      input{
+        margin: 10px 10px 10px 0;
+        height: 25px;
+        width: 190px;
+        
+      }
+      label{
+        display: inline-block;
+        width: 100px;
+      }
+      #btn{
+        margin-left: 22%;
+        height: auto;
+        padding: 9px;
+        background-color: #102939;
+        color: aliceblue;
+        outline: none;
+        
+      }
+      select{
+        margin: 10px 10px 10px 0;
+        width: 200px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="fName">First Name</label>
+      <input
+        type="text"
+        id="text"
+        name="fName"
+        placeholder="Enter your first name"
+        required
+      /><br />
+
+      <label for="lName">Last Name</label>
+      <input
+        type="text"
+        id="text"
+        name="lName"
+        placeholder="Enter your last name"
+      /><br />
+      <label for="Subjects">Subjects</label>
+      <select id="Subjects" name="Subjects">
+        <option value="CSW">Computer Science Workshop</option>
+        <option value="PS">Probability and Statistics</option>
+        <option value="DL">Digital Logic Design</option>
+        <option value="PME">Principle of Macroeconomics</option>
+        <option value="AD">Algorithm Design</option></select
+      ><br />
+      <input type="submit" value="Submit" id="btn"/>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.7.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#slideDown").click(function(){
+					$("p").slideDown();
+				});
+				$("#animate").click(function(){
+					$("p").animate({left:'100px'},1000);
+				});
+
+				$("#hide").click(function(){
+					$("p").hide();
+				});
+				$("#show").click(function(){
+					$("p").show();
+				});
+				$("#fadeIn").click(function(){
+					$("p").fadeIn(1000);
+				});
+				$("p").mouseenter(function(){
+					$(this).css({"border":"2px solid red"});
+				});
+				$("p").mouseleave(function(){
+					$(this).css({"border":"none"});
+				});
+				$("#dblclick").dblclick(function(){
+					$("#p1").css({"background-color":"lightblue"});
+				});
+				$("#attr").click(function(){
+					var v=$("#p1").attr("id");
+					$("#p2").text("Id is "+v);
+				});
+				$("#html").click(function(){
+					$("#p3").html("Hello");
+					
+				});
+			});
+		</script>
+		<style>
+			p{
+				display:none;
+				position:relative;
+
+			}
+			#p1{
+
+				width:100px;
+				height:100px;
+				background-color: blue;
+				}
+		</style>
+	</head>
+	<body> 
+		<button id="slideDown">Click to slideDown</button>
+		<button id="animate">Click to animate</button>
+		<button id="fadeIn">Click to fadeIn</button>
+		<button id="hide">Click to hide</button>
+		<button id="show">Click to show</button>
+		<button id="dblclick">Double click</button>
+		<button id="attr">Click for attr</button>
+		<button id="html">Click for html</button>
+		<p>This is a paragraph</p>	
+		<p id="p1"></p>
+		<p id="p2"></p>
+		<p id="p3"></p>
+	</body>
+</html>
