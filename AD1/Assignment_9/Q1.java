@@ -82,7 +82,5 @@ public class Q1 {
         obj.preorder(obj.root);
         System.out.println("\nPostOrder--");
         obj.postorder(obj.root);
-        System.out.println("\nPreOrder Iterative--");
-        obj.preorder_iterative(obj.root);
     }
 }
