@@ -1,7 +1,6 @@
 package Assignment_9;
 
 import java.util.Scanner;
-import java.util.Stack;
 
 class TreeNode {
     int val;

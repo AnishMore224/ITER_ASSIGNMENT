@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script src="bootstrap.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/329df66e1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    img {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="./assests/img1.avif" alt="Image 1" />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./assests/img2.jpeg" alt="Image 2" />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./assests/img3.jpeg" alt="Image 3" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap4.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script src="bootstrap.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/329df66e1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    #div2 {
+      height: 450px;
+      width: 300px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      padding: 20px;
+    }
+    .card {
+      border: 1px dashed grey;
+      border-radius: 3px;
+      height: 100%;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    #div1 {
+      border: 1px solid grey;
+      border-radius: 3px;
+      padding: 20px;
+      position: relative;
+    }
+    .col-5 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #ex {
+      background-color: #d7dbdd;
+      border: 1px solid grey;
+      position: absolute;
+      top: 0;
+      width: 100px;
+      left: 0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries,
+      </p>
+      <div id="div1">
+        <div class="row"><p id="ex">EXAMPLE</p></div>
+        <div class="row" style="margin-top: 18px">
+          <div class="col-5">
+            <div id="div2" class="container-fluid">
+              <div class="card">
+                <img src="./assests/person.jpg" />
+              </div>
+            </div>
+            <div style="margin-top: 10px">
+              <button type="button" class="btn btn-secondary">
+                <i class="fa-solid fa-tag"></i>
+              </button>
+              <button type="button" class="btn btn-primary">
+                <i class="fa-solid fa-folder-open"></i>
+              </button>
+            </div>
+            <p>Select size < 1500 Kb</p>
+          </div>
+          <div class="col-7">
+            <form>
+              <div class="row">
+                <div class="form-group col-6">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Type Your Email Address"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    placeholder="Type Your Password"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-6">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    class="form-control"
+                    placeholder="Type Your First Name"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    class="form-control"
+                    placeholder="Type Your Last Name"
+                  />
+                </div>
+              </div>
+              <hr />
+              <button type="button" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
