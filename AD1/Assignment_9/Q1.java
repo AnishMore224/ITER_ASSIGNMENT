@@ -1,3 +1,8 @@
+/*
+ Name:Anish More
+ Registraion Number: 2241013365
+ Name of program:Create of Binary search tree and perform inorder, preorder and postorder traversal.
+ */
 package Assignment_9;
 
 import java.util.Scanner;
