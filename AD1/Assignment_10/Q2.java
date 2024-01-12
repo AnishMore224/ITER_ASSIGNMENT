@@ -22,7 +22,7 @@ public class Q2 {
 
     Node front = null, rear = null;
 
-    void insert(Node newNode) {
+    void Enqueue(Node newNode) {
         if (front == null || rear == null) {
             front = newNode;
             rear = newNode;
@@ -31,7 +31,7 @@ public class Q2 {
         rear = newNode;
     }
 
-    void delete() {
+    void dequeue() {
         if (front == null) {
             System.out.println("Queue Underflow");
         }
@@ -71,10 +71,10 @@ public class Q2 {
                 case 1:
                     System.out.print("Enter the data:");
                     Node newNode = new Node(sc.nextInt());
-                    obj.insert(newNode);
+                    obj.Enqueue(newNode);
                     break;
                 case 2:
-                    obj.delete();
+                    obj.dequeue();
                     break;
                 case 3:
                     obj.display();

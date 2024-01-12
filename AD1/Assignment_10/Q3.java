@@ -23,7 +23,6 @@ public class Q3 {
             swap(arr, i, largest);
             maxHeapify(arr, largest,size);
         }
-        return;
     }
 
     void swap(int arr[], int i, int j) {
