@@ -1,3 +1,4 @@
+
 /*Name:Anish More
  Name of the program:Generating nth fibonacci number
  */
@@ -10,7 +11,7 @@ public class Q8 {
     System.out.print("Enter the number: ");
     int num = sc.nextInt();
     int x = 0, y = 1, c;
-    for (int i = 1; i < num; i++) {
+    for (int i = 1; i <= num; i++) {
       c = x + y;
       x = y;
       y = c;
@@ -18,7 +19,8 @@ public class Q8 {
     System.out.println(num + "th fibonacci number is: " + x);
   }
 }
-/*Output 
-Enter the number: 10
-10th fibonacci number is: 34
+/*
+ * Output
+ * Enter the number: 10
+ * 10th fibonacci number is: 34
  */

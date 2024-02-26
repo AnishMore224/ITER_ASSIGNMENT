@@ -15,7 +15,7 @@ public class Q11 {
 		int n = sc.nextInt();
 		int count = 0;
 		while (n != 0) {
-			if ((n % 10) % 2 == 0)
+			if (((n % 10) & 1) == 0)
 				count++;
 			n /= 10;
 		}
