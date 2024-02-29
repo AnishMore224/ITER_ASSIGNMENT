@@ -20,7 +20,7 @@ public class Bfs_traversal {
                 ob.get(i).add(sc.nextInt());
             }
         }
-        boolean b[] = new boolean[8];
+        boolean b[] = new boolean[n];
         Queue<Integer> q = new LinkedList<>();
         q.offer(0);
         b[0] = true;

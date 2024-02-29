@@ -2,6 +2,11 @@ abstract class LibraryResource {
 	private String title;
 	private String author;
 
+	LibraryResource(String title, String author) {
+		this.title = title;
+		this.author = author;
+	}
+
 	public String getTitle() {
 		return title;
 	}
@@ -24,6 +29,11 @@ abstract class LibraryResource {
 class Book extends LibraryResource {
 	int pageCount;
 
+	Book(String title, String author, int pageCount) {
+		super(title, author);
+		this.pageCount = pageCount;
+	}
+
 	public int getPageCount() {
 		return pageCount;
 	}
@@ -33,12 +43,18 @@ class Book extends LibraryResource {
 	}
 
 	public void displayDetails() {
-		System.out.println("Page count: " + pageCount);
+		System.out.println("Title:" + getTitle() + " Author:" + getAuthor() + " Page count: " + pageCount);
 	}
 }
 
 class Magazine extends LibraryResource {
 	String issueDate;
+
+	Magazine(String title, String author, String issueDate) {
+		super(title, author);
+		this.issueDate = issueDate;
+
+	}
 
 	public String getIssueDate() {
 		return issueDate;
@@ -49,12 +65,17 @@ class Magazine extends LibraryResource {
 	}
 
 	public void displayDetails() {
-		System.out.println("Issue Date: " + issueDate);
+		System.out.println("Title:" + getTitle() + " Author:" + getAuthor() + " Issue Date: " + issueDate);
 	}
 }
 
 class DVD extends LibraryResource {
 	double duration;
+
+	DVD(String title, String author, double duration) {
+		super(title, author);
+		this.duration = duration;
+	}
 
 	public double getDuration() {
 		return duration;
@@ -65,21 +86,15 @@ class DVD extends LibraryResource {
 	}
 
 	public void displayDetails() {
-		System.out.println("Duration: " + duration + "hrs");
+		System.out.println("Title:" + getTitle() + " Author:" + getAuthor() + " Duration: " + duration + "hrs");
 	}
 }
 
 public class Q6 {
 	public static void main(String[] args) {
-		Book b = new Book();
-		Magazine m = new Magazine();
-		DVD d = new DVD();
-		b.setTitle("Advanced Engineering Mathematics");
-		b.setAuthor("Abc");
-		b.setPageCount(10);
-		m.setIssueDate("10/02/2024");
-		d.setDuration(2);
-		System.out.println("Title:" + b.getTitle() + "\nAuthor:" + b.getAuthor());
+		Book b = new Book("Advanced Engineering Mathematics", "ABC", 10);
+		Magazine m = new Magazine("Advanced Engineering Mathematics", "ABC", "10/02/2004");
+		DVD d = new DVD("Advanced Engineering Mathematics", "ABC", 3);
 		b.displayDetails();
 		m.displayDetails();
 		d.displayDetails();
@@ -88,9 +103,7 @@ public class Q6 {
 
 /*
  * Output--
- * Title:Advanced Engineering Mathematics
- * Author:Abc
- * Page count: 10
- * Issue Date: 10/02/2024
- * Duration: 2.0hrs
+ * Title:Advanced Engineering Mathematics Author:ABC Page count: 10
+ * Title:Advanced Engineering Mathematics Author:ABC Issue Date: 10/02/2004
+ * Title:Advanced Engineering Mathematics Author:ABC Duration: 3.0hrs
  */
