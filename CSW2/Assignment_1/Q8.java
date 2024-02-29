@@ -2,7 +2,7 @@ interface Vehicle {
     abstract void accelerate();
 
     abstract void brake();
-}   
+}
 
 class Car1 implements Vehicle {
     public void accelerate() {
@@ -32,7 +32,7 @@ class Bicycle implements Vehicle {
     }
 
     public void accelerate(int duration) {
-        System.out.println("Bicycle is accelerating for duartion:" + duration);
+        System.out.println("Bicycle is accelerating for duration:" + duration);
     }
 
     public void brake() {
