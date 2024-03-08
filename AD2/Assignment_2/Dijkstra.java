@@ -1,7 +1,7 @@
 package Assignment_2;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class Dijkstra {
@@ -42,7 +42,6 @@ public class Dijkstra {
             }
         }
 
-        System.out.println("Minimum Spanning Tree: ");
         System.out.println("Vertex \tDistance from source");
         for (int i = 0; i < 7; i++) {
             System.out.println(i + "" + "\t" + v1[i].distance);
@@ -69,13 +68,12 @@ class Vertex1 implements Comparable<Vertex1> {
 
 /*
  * Output--
- * Minimum Spanning Tree:
- * Vertex   Distance from source
- * 0            0
- * 1            10
- * 2            38
- * 3            54
- * 4            25
- * 5            49
- * 6            51
+ * Vertex Distance from source
+ * 0 0
+ * 1 10
+ * 2 38
+ * 3 54
+ * 4 25
+ * 5 49
+ * 6 51
  */

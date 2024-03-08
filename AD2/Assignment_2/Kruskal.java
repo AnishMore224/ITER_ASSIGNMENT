@@ -25,7 +25,7 @@ public class Kruskal {
         for (int i = 0; i < 9; i++) {
             int find_u = find(e[i].u, al);
             int find_v = find(e[i].v, al);
-            if (find_u != find_v && find_u != -1 && find_v != -1) {
+            if (find_u != find_v) {
                 System.out.println(e[i].u + "" + e[i].v);
                 al.get(find_u).addAll(al.get(find_v));
                 al.get(find_v).clear();
