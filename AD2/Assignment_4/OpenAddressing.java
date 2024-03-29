@@ -87,37 +87,3 @@ class OpenAddressing {
     // return -1;
     // }
 }
-
-// Pair arr[] = new Pair[n];
-// int hit = 0;
-// for (int i = 0; i < n; i++) {
-// System.out.println("E");
-// int key = sc.nextInt();
-// int value = sc.nextInt();
-// Pair temp = new Pair(key, value);
-// hit = 0;
-// int h = key % n;
-// while (arr[h] == null) {
-// hit++;
-// h = (key + hit) % n;
-// }
-// arr[h] = temp;
-// System.out.println("h: " + h);
-// }
-// for (Pair i : arr) {
-// System.out.print(i + " ");
-// }
-
-// class Pair {
-// int key;
-// int value;
-
-// Pair(int key, int value) {
-// this.key = key;
-// this.value = value;
-// }
-
-// public String toString() {
-// return "Key: " + this.key + "\tValue: " + this.value;
-// }
-// }
