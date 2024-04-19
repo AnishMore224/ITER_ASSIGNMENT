@@ -11,7 +11,7 @@ public class Q26 {
         }
 
         try {
-            Method m = Q26.class.getMethod("main", String[].class);
+            Method m = Q26.class.getMethod("disp", String[].class);
         } catch (NoSuchMethodException e) {
             System.out.println(e);
         }

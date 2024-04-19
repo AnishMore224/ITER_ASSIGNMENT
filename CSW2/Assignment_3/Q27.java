@@ -1,7 +1,3 @@
-import java.lang.ClassNotFoundException;
-import java.lang.NoSuchMethodException;
-import java.lang.reflect.Method;
-
 public class Q27 {
     public static void main(String[] args) {
         try {
