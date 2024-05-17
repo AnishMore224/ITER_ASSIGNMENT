@@ -19,7 +19,6 @@ public class Q3_4 {
         }
         System.out.println("Level Order Traversal");
         obj.levelOrder(obj.root);
-        System.out.println("Inorder Traversal");
         System.out.println("Country with maximum population: " + obj.max(obj.root));
         System.out.println("Country with minimum population: " + obj.min(obj.root));
     }
