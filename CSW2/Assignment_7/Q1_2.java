@@ -11,7 +11,7 @@ class TreeNode {
         this.right = null;
     }
 }
-
+6
 public class Q1_2 {
     TreeNode root = null;
 

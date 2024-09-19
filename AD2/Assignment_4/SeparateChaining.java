@@ -15,7 +15,6 @@ class SeparateAddressing {
     }
 
     void create() {
-
         System.out.print("Enter number of elements:");
         int n = sc.nextInt();
         arr = new Node[n];
