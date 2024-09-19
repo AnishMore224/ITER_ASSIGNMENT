@@ -5,3 +5,9 @@ if x>y:
     print("ok")
 else:
     print("ok anyway")
+
+
+'''
+Output---
+ok
+'''
