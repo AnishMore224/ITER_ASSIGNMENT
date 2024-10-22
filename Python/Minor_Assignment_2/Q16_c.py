@@ -9,7 +9,7 @@ for i in range(0,n):
 print("Sum of series:%d"%sum)
 
 '''
-Outputt--
+Output--
 Enter no. of terms:4
 Sum of series:-4
 '''
