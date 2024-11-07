@@ -1,6 +1,5 @@
 
 def permutation(s):
-    '''Interative function to generate all permutations of a string'''
     if len(s) == 0:
         return []
     elif len(s) == 1:
